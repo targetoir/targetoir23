@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#" class="logo"><img src="image/image1.png" class="logo"></a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2><span>Leadership. Success. Progress.</span><br></h2>
+        <p>Wiseling is constantly working to provide consumers, corporations, governments and institutions with a wide range of financial services and products. We strive to achieve the best results for our customers through financial ingenuity that leads to simple, creative and responsible solutions.</p>
+        <!--Leadership. Success. Progress.-->
+        <a href="#">Learn more</a>
+      </div>
+      <div class="imgBox">
+        <img src="image/Acer-TravelMate-TMP-215-51-51G-with-ODD-main.png" class="starbucks">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="image/logo-asus-png-7164.png" onclick="imgSlider('image/logo-asus-png-7164.png');changeCircleColor('#023e8a')"></li>
+      <li><img src="image/dell-png-logo-3741.png" onclick="imgSlider('image/dell-png-logo-3741.png');changeCircleColor('#caf0f8')"></li>
+      <li><img src="image/MSI.png" onclick="imgSlider('image/MSI.png');changeCircleColor('#e63946')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/"><img src="image/icons8-facebook-24.png"></a></li>
+      <li><a href="https://www.instagram.com/"><img src="image/icons8-instagram-24.png"></a></li>
+      <li><a href="https://twitter.com/"><img src="image/icons8-twitter-26.png"></a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.starbucks').src = anything;
+  }
+
+  function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+  }
+
+  function toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active')
+   navigation.classList.toggle('active')
+  }
+  </script>
+</body>
+</html>
