@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="home">
   <section class="circle22">
     <div class="circle"></div>
     <header>
       <a href="#" class="logo"><img src="image/image1.png" class="logo"></a>
       <div class="toggle" onclick="toggleMenu();"></div>
       <ul class="navigation">
-        <li><a href="#"class="cool-link">Home</a></li>
+        <li><a href="#home"class="cool-link">Home</a></li>
         <li><a target="_blank" href="Blog/indexblog.html"class="cool-link">Blog</a></li>
-        <li><a href="#"class="cool-link">About</a></li>
-        <li><a target="_blank" href="contactpage/indexcp.html" class="cool-link">Contact</a></li>
+        <li><a href="#aboutpage"class="cool-link">About</a></li>
+        <li><a href="#contact" class="cool-link">Contact</a></li>
       </ul>
     </header>
     <div class="content">
@@ -43,11 +43,34 @@
     </ul>
   </section>
 
+  <!-----------About Page----------->
+  <section id="aboutpage"class="aboutpage">
+<div class="about-section">
+  <div class="inner-container">
+    <h1>About Us</h1>
+    <p class="text">
+      Targetoir23 created to fulfill the part of opportunity and become successful simple website all around the world. <br><br>
+
+Our goal is to deliver outstanding high-tech technologies to the following most successful computing business sector partners. We shall present it to you through the companies of AsusTek Computer Inc., Micro-Star International Co., Ltd, The Hewlett-Packard Company, and Dell Technologies Inc.
+<br><br>
+We have been building up our business since 2021. Our task is to give you our most consistent productivity tool of the highest standard with a source of common machine industry.
+    </p>
+    <!--<div class="skills">
+      <span>Web Design</span>
+      <span>Photoshop & Illustrator</span>
+      <span>Coding</span>
+    </div>-->
+  </div>
+</div>
+
+  </section>
+  <!-----------About Page End----------->
+
   <!----------------Contact Page Start------------------>
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="content11">
       <h2>Contact Us</h2>
-      <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur maxime praesentium sit nostrum, consequatur corporis repellendus possimus, eos aut iure labore voluptatum voluptates optio voluptate at corrupti perspiciatis fugiat debitis.</p>-->
+      <p>We'd love to help you start exceeding your CX goals.</p>
     </div>
     <div class="container11">
       <div class="contactInfo">
@@ -62,14 +85,14 @@
           <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
           <div class="text">
             <h3>Phone</h3>
-            <p>(049) 813-0760</p>
+            <p>(046) 432-3417</p>
           </div>
         </div>
         <div class="box">
           <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
           <div class="text">
             <h3>Email</h3>
-            <p>random@email.com</p>
+            <p>gmcgath@msn.com</p>
           </div>
         </div>
       </div>
@@ -105,36 +128,35 @@
     <p>Discover and learn to find a way to overcome your need. Let us be your trust partner all over the place.
       </p>
     <div class="socials">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-      <a href="#"><i class="fa fa-youtube"></i></a>
-      <a href="#"><i class="fa fa-tumblr"></i></a>
+      <a target="_blank" href="facebook.com"><i class="fa fa-facebook"></i></a>
+      <a target="_blank" href="twitter.com"><i class="fa fa-twitter"></i></a>
+      <a target="_blank" href="instagram.com"><i class="fa fa-instagram"></i></a>
+      <a target="_blank" href="youtube.com"><i class="fa fa-youtube"></i></a>
+      <!--<a target="_blank" href="tumblr.com"><i class="fa fa-tumblr"></i></a>-->
     </div> 
   </div>  
   <ul class="footer-right">
     <li>
       <h2>Product</h2>
       <ul class="box">
-        <li><a href="#">ASUS</a></li>
-        <li><a href="#">HP</a></li>
-        <li><a href="#">M.S.I</a></li>
-        <li><a href="#">DELL</a></li>
+        <li><a href="#home">ASUS</a></li>
+        <li><a href="#home">HP</a></li>
+        <li><a href="#home">M.S.I</a></li>
+        <li><a href="#home">DELL</a></li>
       </ul>
     </li>
   
     <li class="features">
       <h2>Useful Links</h2>
       <ul class="box">
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Sales</a></li>
-        <li><a href="#">Certifications</a></li>
-        <li><a href="#">Customer Service</a></li>
+        <li><a target="_blank" href="Blog/indexblog.html">Blog</a></li>
+        <li><a href="#home">Pricing</a></li>
+        <li><a href="https://www.termsfeed.com/live/86972f14-e62b-4971-8bcc-64ca5bbc86f4">Terms & Conditions</a></li>
+        <li><a href="#home">Customer Service</a></li>
       </ul>
     </li>
   
-    <li>
+    <!--<li>
       <h2>Address</h2>
       <ul class="box">
         <li><a href="#">University Rd</a></li>
@@ -143,11 +165,11 @@
         <li><a href="#">Metro Manila</a></li>
         
       </ul>
-    </li>
+    </li>-->
   </ul>
   
   <div class="footer-bottom">
-    <p>All Right reserved by &copy;Targetoir-twenty-three 2020</p>
+    <p>All Right reserved by &copy;Targetoir²³ 2021</p>
   </div>
   </footer>
   
