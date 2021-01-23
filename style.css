@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(/image/web-design-background.png);
+  background: url(image/web-design-background.png);
   background-size: cover 100;
 }
 .contact .content11{
